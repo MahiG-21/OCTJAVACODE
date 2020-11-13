@@ -71,7 +71,7 @@ public class Returnmethods {
     // classname.methodname;
 	UserdefinedMethods2.login();
 	
-	
+	MethodPrmtr.concatinate("new", "class");
 	
 	
 	
