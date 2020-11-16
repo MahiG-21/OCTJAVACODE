@@ -24,21 +24,21 @@ public class NUmberMethods {
 			//	valueOf() method ==>presnt in both  String and Integer class
 				
 				//convert String to int
-				String s="100";
+				String s1="100";
 				
-				int i =Integer.valueOf(s);
+				int i1 =Integer.valueOf(s1);
 				
 				
-				System.out.println(i+100);  //200
+				System.out.println(i1+100);  //200
 				
 				
 				// convert an int to String
 				
 				int x=10;
 				
-			String s1	=String.valueOf(x);
+			String s2	=String.valueOf(x);
 				
-			System.out.println(s1+100);  //10100	
+			System.out.println(s2+100);  //10100	
 			
 
 
@@ -48,19 +48,19 @@ public class NUmberMethods {
 			//0 --> if number1 = number2
 			// -1 ==> if number1<number2
 
-			String s="selenium";
+			String s3="selenium";
 			
-			s.compareTo("batch");
+			s3.compareTo("batch");
 				
 			//int i=10;
 			
-			Integer i=10;
+			Integer ix=10;
 			
-			System.out.println(i.compareTo(100));  // -1
+			System.out.println(ix.compareTo(100));  // -1
 				
-			System.out.println(i.compareTo(5))	;  //1
+			System.out.println(ix.compareTo(5))	;  //1
 			
-			System.out.println(i.compareTo(10));  //0
+			System.out.println(ix.compareTo(10));  //0
 
 
 
@@ -71,20 +71,20 @@ public class NUmberMethods {
 				
 			
 				
-				Integer x=10;
-				Integer y=20;
+				Integer x1=10;
+				Integer y1=20;
 				
-				boolean result=x.equals(y);  
+				boolean result=x1.equals(y1);  
 				
 				System.out.println(result);
 				
-				System.out.println(x.equals(10));   // true	
+				System.out.println(x1.equals(10));   // true	
 		
 		
 		
 
 
-	
+
 	
 	
 	
