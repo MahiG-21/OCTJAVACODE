@@ -54,7 +54,7 @@ public class NUmberMethods {
 				
 			//int i=10;
 			
-			Integer ix=10;
+			Integer ix=10
 			
 			System.out.println(ix.compareTo(100));  // -1
 				
