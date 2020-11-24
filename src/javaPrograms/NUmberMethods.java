@@ -54,7 +54,7 @@ public class NUmberMethods {
 				
 			//int i=10;
 			
-			Integer ix=10
+			Integer ix=10;
 			
 			System.out.println(ix.compareTo(100));  // -1
 				
@@ -81,8 +81,53 @@ public class NUmberMethods {
 				System.out.println(x1.equals(10));   // true	
 		
 		
-		
+	//Method3: 	abs()   // abs() method is a static method and is avialble in Math class
 
+				
+	//We will call this methods ===>	//Classname.methodname()		
+				
+				
+	System.out.println(Math.abs(-10));  // output is going to be a +ve integer			
+				
+	double d1=Math.abs(-10.7567);	// output is going to be a +ve decimal value		
+				
+		System.out.println(d1);
+		
+	// Method4	: round()
+		
+	// it will round of the decimal value to its nearest integer	
+		
+		System.out.println(Math.round(10.234));  // 10
+				
+		
+		long x4=Math.round(10.765);  //11	
+		
+		System.out.println(x4);
+		
+		
+		// min(), max(), random();
+		
+		Math.min(10, 20); //return the small of 2 values
+		
+		System.out.println(Math.max(30, 40)); //return the bigger number of 2 values
+		
+		System.out.println(Math.random());
+		
+		
+		
+		
+		
+		
+		
+	
+				
+				
+				
+				
+				
+				
+				
+				
 
 
 	

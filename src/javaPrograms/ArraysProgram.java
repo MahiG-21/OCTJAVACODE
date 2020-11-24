@@ -41,6 +41,10 @@ public class ArraysProgram {
 		System.out.println(arr[0]);  //10
 		System.out.println(arr[2]);  //30
 		
+		
+		
+		
+		
 		// 3rd method
 		
 		int [] arr3= {10,20,30,40};
@@ -75,9 +79,9 @@ public class ArraysProgram {
 		
 		// 1 loop for moving inside my parent loop
 		
-		for(int i=0; i<3;i++)  // i =2
+		for(int i=0; i<arr5.length;i++)  // i =2
 		{
-			for(int j=0;j<4;j++)  // j=0
+			for(int j=0;j<arr5[i].length;j++)  // j=0
 			{
 				
 				System.out.println(arr5[i][j]);  // arr5[2][0]  //x,1,batch,23
@@ -91,13 +95,16 @@ public class ArraysProgram {
 
 
 
+		  
+		  System.out.println(arr2.length);
+		  System.out.println(arr7.length);
 		
 
 		  
 		
+		int [] arraynew= {1,2,3,4,5};
 		
-		
-		
+		System.out.println(arraynew.length);
 		
 		
 		
