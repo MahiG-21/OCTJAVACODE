@@ -13,22 +13,55 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishal mittal\\Downloa
 		
 
 		WebDriver driver = new ChromeDriver();	
-		 driver.get("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Selenium+%28software%29");
+		
+		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
+driver.get("https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Selenium+%28software%29");
+
+//enter exustung username on the username field
+
+driver.findElement(By.xpath("//input[@id='wpName2']")).sendKeys("abcd");
+
+Thread.sleep(3000);
 			
-			// To check if the text of the error message is correct or not	
-				
-				// getText() -- will fetch any text from the webpage
-				
-			// Provide invalid data in the username text box
-			  
-			   driver.findElement(By.id("wpName2")).sendKeys("abcdf");
-			   
-			   Thread.sleep(2000);
-			    
-			 String  actualtext =driver.findElement(By.xpath("//*[@id=\"userlogin2\"]/div/div[2]/div/div")).getText();
-			    
-			    System.out.println("actual error message = " + actualtext);
-			    
+
+// error message will be displayed.
+//Once error message is displayed, we have to capture it
+//getText() method which is sued to fetch the text from the
+
+////*[@id="userlogin2"]/div/div[2]/div/div
+
+//   xpth("//*[@id='userlogin2']/div/div[2]/div/div")
+
+String errorText= driver.findElement(By.xpath("//*[@id=\"userlogin2\"]/div/div[2]/div/div")).getText();
+
+
+System.out.println(errorText);
+
+if(errorText.contains("Username entered already in use. Please choose a different name."))
+{
+	System.out.println("Error message on the webpage is correct");
+}
+else
+{
+	System.out.println("error message is incorrect");
+}
+
+
+driver.close();
+
+
+
+
+
+
+
+
+
+
+
+
 
 	}
 
